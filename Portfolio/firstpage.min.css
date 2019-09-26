@@ -5,15 +5,16 @@
 
 
 
-/* couleur tout texte et fond site entier */
+/* COULEUR PAGE+COULEUR TEXTE PAGE */
 body 
 {
     color:rgb(0, 0, 0);
     background-color:rgb(252, 252, 252)
+    
 }
 
 
-/* marge,taille de Image */
+/* IMAGE*/
 img
 {    
      display:block;
@@ -22,7 +23,7 @@ img
      margin-right:auto
 }
 
-/* Cynthiaboulevard couleur+ position texte */
+/* TITRE PRINCIPAL */
 header
 {   
     color: rgb(0, 0, 0);
@@ -30,7 +31,7 @@ header
 
 }
 
-/* Menu emplacement à droite */
+/* MENU  */
 
 li 
 {
@@ -49,18 +50,19 @@ li
   .active {
     background-color: rgb(12, 51, 16);
     color: aliceblue;
-  }
+}
 
   .active,li a,li,ul {
       display: block;
-  }
+}
 
+/* les SOUS-TITRES */
 h2
-{   background-color: rgb(114, 145, 114);
+{  
     text-align:center
 }
 
-
+/* texte A propos */
 p
 {
     display: flex;
@@ -69,21 +71,38 @@ p
     justify-content: center;
     text-align: center;
 
-
 }
-   
+
+
+/* projet personnel */
 .p1
 {
-   display: flex;
-   flex-direction: column;
-   width: 30%;
-
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
+
+/* projet professionnel */
 .p2
 {
     display: flex;
     flex-direction: column;
     width: 30%;
-
 }
+ 
+
+.parcour
+{
+    text-align: center;
+}
+
+
+
+
+.cont
+{
+    text-align: center;
+}
+
+
