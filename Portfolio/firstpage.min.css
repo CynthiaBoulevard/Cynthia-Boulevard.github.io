@@ -20,8 +20,10 @@ img
      display:block;
      width: 100%;
      margin-left:auto;
-     margin-right:auto
+     margin-right:auto;
 }
+
+
 
 /* TITRE PRINCIPAL */
 header
@@ -30,6 +32,7 @@ header
     text-align:center;
 
 }
+
 
 /* MENU  */
 
@@ -56,23 +59,105 @@ li
       display: block;
 }
 
+
+
 /* les SOUS-TITRES */
 h2
-{  
-    text-align:center
+{     
+     text-align:center
 }
 
-/* texte A propos */
+.contact
+{
+    text-align:center
+    
+
+}
+/* À PROPOS */
 p
 {
-    display: flex;
-    flex-flow: row;
+    display:flex;
     width: 30%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     text-align: center;
-
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid border;
+    }
+/* bloc"à propos"déplacer centre */
+p
+{
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    text-align: center;
 }
 
+
+/* cv */
+/* expériences */
+.h41
+{
+    max-width: 700px;
+    margin: 200px 700px 0px 0px;
+    padding: 15px;
+    text-align: center;
+}
+.date
+{
+    max-width: 700px;
+    margin: 20px 700px 0px 0px;
+    padding: 15px;
+    text-align: center;
+}
+
+.bts
+{
+    max-width: 700px;
+    margin: 20px 600px 0px 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.btc
+{
+    margin: 20px 600px 0px 210px;
+}
+/* compétences */
+.h42
+{
+    max-width: 700px;
+    margin: -550px 0px 50px 700px;
+    padding: 15px;
+    text-align: center;
+}
+.suiteA
+{
+    max-width: 700px;
+    margin: 0px 0px 50px 520px;
+    padding: 15px;
+    text-align: center;
+}
+.href
+{
+    
+    margin: 50px 50px 0px 0px;
+}
+/* PORTFOLIO */
+.container3
+{
+    margin: 50px 50px 0px 0px;
+    max-width: 700px;
+    margin: 500px 600px 0px 0px;
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio
+{
+    margin: 0px -600px 50px 50px;
+
+}
 
 /* projet personnel */
 .p1
@@ -80,17 +165,23 @@ p
     display: flex;
     flex-direction: column;
     width: 30%;
+
 }
+
+
 
 
 /* projet professionnel */
 .p2
 {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
 }
  
+
+
 
 .parcour
 {
