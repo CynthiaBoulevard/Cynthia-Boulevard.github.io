@@ -4,12 +4,12 @@
 
 
 
-
 /* COULEUR PAGE+COULEUR TEXTE PAGE */
 body 
 {
     color:rgb(0, 0, 0);
     background-color:rgb(252, 252, 252)
+    
     
 }
 
@@ -30,8 +30,28 @@ header
 {   
     color: rgb(0, 0, 0);
     text-align:center;
+    
 
+} 
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
+  
+
+
+h1{
+
+    background:url(banane.jpg);
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin: 50px 0px 0px 0px
 }
+
+
+
+
 
 
 /* MENU  */
@@ -49,22 +69,38 @@ li
     text-decoration: none;
 }
 
-  
-  .active {
-    background-color: rgb(12, 51, 16);
-    color: aliceblue;
-}
 
   .active,li a,li,ul {
       display: block;
 }
+ /* couleur de survol */
+li a:hover {
+    background-color: rgb(113, 145, 116);
+    color: white;}
+
+.active {
+        background-color: rgb(113, 145, 116);
+        color: white;
+      }  
+      
+      
+.Menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+      }
+
+
+
 
 
 
 /* les SOUS-TITRES */
 h2
 {     
-     text-align:center
+     text-align:center;
+     margin: 0 0 0
 }
 
 .contact
@@ -73,7 +109,22 @@ h2
     
 
 }
-/* À PROPOS */
+
+
+
+
+
+
+/* Qui suis-je? */
+/* fond */
+.container2
+{
+    background-color: rgb(205, 240, 223);
+    text-align: center;
+    padding: 20px;
+  
+}
+/*  */
 p
 {
     display:flex;
@@ -84,7 +135,7 @@ p
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid border;
     }
-/* bloc"à propos"déplacer centre */
+/* bloc" Qui suis-je?"déplacer centre */
 p
 {
     max-width: 700px;
@@ -95,67 +146,107 @@ p
 
 
 /* cv */
+.cv
+{
+    font-family:'catfish-regular-webfont'; font-weight:normal; font-style:normal;
+    margin: 80px 0px 0px 0px
+}
+
+/* fond cv */
+.container21
+{
+    background-color: #9fc5b3;
+    text-align: center;
+    padding: 3px;
+    margin: 80px 50px 10px 50px;
+}
+
+
+
+/* formation */
+.formation
+{
+    
+    margin: 50px 100px 100px -300px;
+    width: 150%;
+    text-align: center;
+}
+
+
+
 /* expériences */
 .h41
 {
     max-width: 700px;
-    margin: 200px 700px 0px 0px;
-    padding: 15px;
-    text-align: center;
+    margin: -90px 0px -50px 0px;
+    padding: 25px;
+    text-align: left;
 }
 .date
 {
     max-width: 700px;
-    margin: 20px 700px 0px 0px;
-    padding: 15px;
-    text-align: center;
+    margin: -80px 700px 0px 0px;
+    padding: 30px;
+    text-align: left;
 }
 
 .bts
 {
     max-width: 700px;
-    margin: 20px 600px 0px 150px;
+    margin: 20px 600px 0px 0px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .btc
 {
-    margin: 20px 600px 0px 210px;
+    margin: 20px 600px 0px 0px;
 }
+
+
+
 /* compétences */
 .h42
 {
     max-width: 700px;
-    margin: -605px 0px 100px 700px;
+    margin: -380px 200px 100px 700px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 .suiteA
 {
     max-width: 700px;
-    margin: 0px 0px 50px 520px;
+    margin: 80px 180px 50px 520px;
     padding: 15px;
-    text-align: center;
+    text-align:left;
 }
 .href
 {
     
     margin: 50px 50px 0px 0px;
 }
+
+
+
+
 /* PORTFOLIO */
+
+/* fond portfolio */
+
+
 .container3
 {
+   
     margin: 50px 50px 0px 0px;
     max-width: 700px;
-    margin: 500px 600px 0px 0px;
+    margin: 400px 600px 0px 0px;
     padding: 15px;
     text-align: center;
 }
 
 .portfolio
 {
-    margin: 0px -600px 50px 50px;
+    margin:0px -550px 50px 50px;
 
 }
 
@@ -164,40 +255,69 @@ p
 {
     
     max-width: 700px;
-    margin: 200px 700px 0px 0px;
+    margin: 150px 0px 300px 10px;
     padding: 15px;
     text-align: center;
-
-
 }
-h4
-{
-  margin: 0 200px 0px 100px
-}
-
 
 
 /* projet professionnel */
 .p2
 {
+   
     max-width: 700px;
- 
-    padding: 15px;
-    max-width: 700px;
-    margin: -605px 0px 100px 700px;
-    border: 20px 20px 20px 20px;
+    margin: -670px 0px 300px 820px;
     padding: 15px;
     text-align: center;
+    width: 40%;
+
+
+  
 }
- 
 
 
+.p2
+
+{
+border-radius: 5px;
+}
+
+.container4
+{
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+}
 
 .parcour
 {
     text-align: center;
+    margin: -50px 50px 50px 50px;
 }
 
+.lieux
+{
+    text-align: center;
+    margin: 90px 160px 500px 50px;
+    justify-content: space-around;
+    background-color: #9fc5b3;
+    text-align: center;
+    padding: 100px;
+    justify-content: flex-start;
+
+}
+
+.li h5 a
+{
+    display: flex;
+    margin: 0px 100px 0px 0px
+}
+
+
+#cbb
+{
+    display: flex;
+    justify-content: end;
+}
 
 
 
@@ -207,3 +327,32 @@ h4
 }
 
 
+footer
+{
+    
+        background-color: rgb(182, 240, 213);
+        text-align: center;
+        padding: 20px;
+      
+}
+
+/* formulaire */
+input[type=text] {
+    border: 2px solid rgb(226, 134, 121);
+    border-radius: 4px;
+  }
+
+  /* la bordure ce color en cliquant à l'intérieur */
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+  /* la zone d'écriture s'agrandit en cliquant dedans */
+  input[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 50%;
+  }
