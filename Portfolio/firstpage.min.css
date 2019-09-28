@@ -8,7 +8,7 @@
 body 
 {
     color:rgb(0, 0, 0);
-    background-color:rgb(252, 252, 252)
+    background-color: white;
     
     
 }
@@ -21,6 +21,16 @@ img
      width: 100%;
      margin-left:auto;
      margin-right:auto;
+     
+     z-index: -1;
+}
+
+.image2
+{
+    display:block;
+     width: 15%;
+     margin: -250px 0px 0px 300px;
+}
 }
 
 
@@ -34,19 +44,13 @@ header
 
 } 
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-  }
-  
-
 
 h1{
 
     background:url(banane.jpg);
     background-repeat: no-repeat;
     padding: 15px;
-    margin: 50px 0px 0px 0px
+    margin: 50px 0px -80px 450px
 }
 
 
@@ -142,6 +146,8 @@ p
     margin: 0 auto 30px auto;
     padding: 15px;
     text-align: center;
+    font-style: normal;
+    font-size: 1em;
 }
 
 
@@ -164,12 +170,17 @@ p
 
 
 /* formation */
+/* titre formation */
+
+
 .formation
 {
     
     margin: 50px 100px 100px -300px;
     width: 150%;
     text-align: center;
+    font-style: oblique;
+    font-size: 0.9em;
 }
 
 
@@ -178,15 +189,16 @@ p
 .h41
 {
     max-width: 700px;
-    margin: -90px 0px -50px 0px;
+    margin: -40px 0px 50px 0px;
     padding: 25px;
     text-align: left;
+
 }
 .date
 {
     max-width: 700px;
     margin: -80px 700px 0px 0px;
-    padding: 30px;
+    padding: 15px;
     text-align: left;
 }
 
@@ -203,13 +215,52 @@ p
     margin: 20px 600px 0px 0px;
 }
 
+.txt1
+{
+    margin: 20px 600px 0px 0px;
+    text-align: left;
+    padding: 15px;
+    width: 50%;
+    font-size: 0.9em;
+    font-style: oblique;
+}
+
+.date1
+{
+    margin: 20px 600px 0px 0px;
+    text-align: left;
+    padding: 15px;
+
+}
+
+.txt2
+{
+    margin: 20px 600px 0px 0px;
+    text-align: left;
+    padding: 15px;
+    width: 50%;
+    font-size: 0.9em;
+    font-style: oblique;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* compétences */
 .h42
 {
     max-width: 700px;
-    margin: -380px 200px 100px 700px;
+    margin: -700px 200px 100px 700px;
     padding: 15px;
     text-align: left;
 }
@@ -229,6 +280,21 @@ p
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 /* PORTFOLIO */
 
 /* fond portfolio */
@@ -239,7 +305,7 @@ p
    
     margin: 50px 50px 0px 0px;
     max-width: 700px;
-    margin: 400px 600px 0px 0px;
+    margin: 800px 600px 0px 0px;
     padding: 15px;
     text-align: center;
 }
@@ -326,25 +392,26 @@ border-radius: 5px;
     text-align: center;
 }
 
-
+ 
 footer
 {
     
         background-color: rgb(182, 240, 213);
-        text-align: center;
+        text-align: left;
         padding: 20px;
-      
+        max-width: 1500px;
+
 }
 
 /* formulaire */
 input[type=text] {
     border: 2px solid rgb(226, 134, 121);
-    border-radius: 4px;
+    border-radius: 
   }
 
   /* la bordure ce color en cliquant à l'intérieur */
   input[type=text]:focus {
-    border: 3px solid #555;
+    border: 3px solid rgb(126, 71, 35);
   }
 
   /* la zone d'écriture s'agrandit en cliquant dedans */
