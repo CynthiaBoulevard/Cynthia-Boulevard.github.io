@@ -4,100 +4,36 @@
 
 
 
+
+
+
 /* COULEUR PAGE+COULEUR TEXTE PAGE */
 body 
 {
     color:rgb(0, 0, 0);
-    background-color: white;
-    
-    
+    background-color: white;  
 }
 
-
-/* IMAGE*/
-img
-{    
-     display:block;
-     width: 100%;
-     margin-left:auto;
-     margin-right:auto;
-     
-     z-index: -1;
-}
-
-.image2
+/*  a catégoriser */
+p
 {
-    display:block;
-     width: 15%;
-     margin: -250px 0px 0px 300px;
-}
-}
-
-
-
-/* TITRE PRINCIPAL */
-header
-{   
-    color: rgb(0, 0, 0);
+    display:flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: flex-start;
     text-align:center;
-    
-
-} 
-
-
-h1{
-
-    background:url(banane.jpg);
-    background-repeat: no-repeat;
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid border;
+    }
+/* bloc" Qui suis-je?"déplacer centre */
+p
+{
+    max-width: 700px;
     padding: 15px;
-    margin: 50px 0px -80px 450px
+    
+    font-style: normal;
+    font-size: 1em;
 }
-
-
-
-
-
-
-/* MENU  */
-
-li 
-{
-    float: right;
-}
-  li a 
-{
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-  .active,li a,li,ul {
-      display: block;
-}
- /* couleur de survol */
-li a:hover {
-    background-color: rgb(113, 145, 116);
-    color: white;}
-
-.active {
-        background-color: rgb(113, 145, 116);
-        color: white;
-      }  
-      
-      
-.Menu {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: white;
-      }
-
-
-
-
 
 
 /* les SOUS-TITRES */
@@ -113,76 +49,191 @@ h2
     
 
 }
+/* a catégoriser */
 
+
+
+
+
+
+
+  /* gros titre */
+.CB {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    margin: -50px 0px 0px 0px;
+    color: rgb(7, 23, 59)
+  }
+  /* petit titre en dessous */
+.devju
+  {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 40px 0px 0px 0px;
+    color: rgb(22, 22, 31)
+  }
+  
+
+/* IMAGE*/
+img
+{    
+     display:block;
+     width: 100%;
+     margin-left:auto;
+     margin-right:auto;
+     z-index: -1;
+    
+}
+
+
+ 
+/* MENU  */
+
+li 
+{
+    float: right;
+}
+li a 
+{
+    display: inline-block;
+    color: rgb(168, 201, 185);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.active,li a,li,ul 
+{
+      display: block;
+}
+
+ /* couleur de survol */
+li a:hover 
+{
+
+    background-color: rgb(113, 145, 116);
+    color: white;
+}
+
+.active 
+{
+        background-color: rgb(113, 145, 116);
+        color: white;
+}  
+      
+      
+.Menu 
+{
+        position: absolute;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        
+}
 
 
 
 
 
 /* Qui suis-je? */
+
+/* photo de moi */
+.image2
+{
+    display:block;
+     width: 15%;
+     margin: -300px 0px 80px 300px;
+}
+
 /* fond */
 .container2
 {
-    background-color: rgb(205, 240, 223);
+    background-color: rgb(168, 201, 185);
     text-align: center;
     padding: 20px;
+    margin: 50px 0px 0px 0px
   
 }
-/*  */
-p
+/* titre qui suis-je? */
+.QSJ
 {
-    display:flex;
-    width: 30%;
-    justify-content: space-between;
-    align-items: flex-start;
+    color: rgb(7, 23, 59);
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid border;
-    }
-/* bloc" Qui suis-je?"déplacer centre */
-p
+    margin: 50px 20px 0px 0px
+}
+/* texte qui suis-je? */
+.txtqsj
 {
     max-width: 700px;
-    margin: 0 auto 30px auto;
+    margin: 70px -50px 80px 500px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     font-style: normal;
     font-size: 1em;
+    color: white;
+    width: 45%;
+    font-size: 0.89em;
 }
+
 
 
 /* cv */
+
+/* titre mon cv */
 .cv
 {
-    font-family:'catfish-regular-webfont'; font-weight:normal; font-style:normal;
-    margin: 80px 0px 0px 0px
+    font-family: 'Times New Roman', Times, serif;
+    margin: 160px 0px 0px 0px;
+    color: rgb(7, 23, 59);
+    font-size: 2.5em;
+    text-align: center;
 }
 
 /* fond cv */
 .container21
 {
-    background-color: #9fc5b3;
+    background-color: #5b8a74;
     text-align: center;
     padding: 3px;
     margin: 80px 50px 10px 50px;
 }
 
 
-
 /* formation */
 /* titre formation */
 
-
-.formation
+.fore
 {
-    
-    margin: 50px 100px 100px -300px;
-    width: 150%;
+    margin: 30px 0px 100px -10px;
+    width: 100%;
     text-align: center;
-    font-style: oblique;
-    font-size: 0.9em;
+    font-style: normal;
+    font-size: 1.6em;
+    color: rgb(7, 23, 59);
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.école
+{
+    margin: 50px 50px 50px 300px;
+    width: 150%;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.9em;
+    color: rgb(7, 23, 59);
+}
 
 
 /* expériences */
@@ -242,7 +293,7 @@ p
     font-size: 0.9em;
     font-style: oblique;
 }
-}
+
 
 
 
@@ -293,104 +344,6 @@ p
 
 
 
-/* 
-
-/* PORTFOLIO */
-
-/* fond portfolio */
-
-
-.container3
-{
-   
-    margin: 50px 50px 0px 0px;
-    max-width: 700px;
-    margin: 800px 600px 0px 0px;
-    padding: 15px;
-    text-align: center;
-}
-
-.portfolio
-{
-    margin:0px -550px 50px 50px;
-
-}
-
-/* projet personnel */
-.p1
-{
-    
-    max-width: 700px;
-    margin: 150px 0px 300px 10px;
-    padding: 15px;
-    text-align: center;
-}
-
-
-/* projet professionnel */
-.p2
-{
-   
-    max-width: 700px;
-    margin: -670px 0px 300px 820px;
-    padding: 15px;
-    text-align: center;
-    width: 40%;
-
-
-  
-}
-
-
-.p2
-
-{
-border-radius: 5px;
-}
-
-.container4
-{
-    margin: 10px 0px 0px 0px;
-    justify-content: center;
-}
-
-.parcour
-{
-    text-align: center;
-    margin: -50px 50px 50px 50px;
-}
-
-.lieux
-{
-    text-align: center;
-    margin: 90px 160px 500px 50px;
-    justify-content: space-around;
-    background-color: #9fc5b3;
-    text-align: center;
-    padding: 100px;
-    justify-content: flex-start;
-
-}
-
-.li h5 a
-{
-    display: flex;
-    margin: 0px 100px 0px 0px
-}
-
-
-#cbb
-{
-    display: flex;
-    justify-content: end;
-}
-
-
-
-.cont
-{
-    text-align: center;
-}
 
  
 footer
@@ -400,26 +353,37 @@ footer
         text-align: left;
         padding: 20px;
         max-width: 1500px;
+        margin: 50px 0px 50px 0px;
+        justify-content: flex-end;
+        justify-content: center;
 
 }
 
+.Contact
+{
+    margin: 0 0 500px 0px
+}
+
 /* formulaire */
-input[type=text] {
+input[type=text] 
+{
     border: 2px solid rgb(226, 134, 121);
-    border-radius: 
-  }
+}
 
-  /* la bordure ce color en cliquant à l'intérieur */
-  input[type=text]:focus {
+/* la bordure ce color en cliquant à l'intérieur */
+input[type=text]:focus 
+{
     border: 3px solid rgb(126, 71, 35);
-  }
+}
 
-  /* la zone d'écriture s'agrandit en cliquant dedans */
-  input[type=text] {
+/* la zone d'écriture s'agrandit en cliquant dedans */
+input[type=text] 
+{
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-  }
+}
   
-  input[type=text]:focus {
+input[type=text]:focus 
+{
     width: 50%;
-  }
+}
