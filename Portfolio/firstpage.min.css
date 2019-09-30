@@ -1,5 +1,173 @@
 
 
+  /* ANIMATION */
+  .devju
+  {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+/* ANIMATION TITRE CV */
+
+thick: 3px;
+pad : 0.7em;
+extra : calc(#{$pad} * 1.2);
+color : #f26522;
+
+
+.portfolio-experiment {
+  background: #2d2d2d;
+  
+  a {
+    color: white;
+    padding: $pad $extra;
+    display: inline-block;
+    border: $thick solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+
+    .text {
+      // padding: 0 0.3em;
+      font-family: proxima-nova, monospace;
+      transform: translate3d(0,$pad,0);
+      display: block;
+      transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -$thick;
+      left: $extra;
+      right: $extra;
+      height: $thick;
+      background: $color;
+      // z-index: -1;
+      transition: 
+        transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+        right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+        left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+      transform-origin: left;
+    }
+
+  }
+
+  .line {
+    position: absolute;
+    background: $color;
+
+    &.-right,
+    &.-left {
+      width: $thick;
+      bottom: -$thick;
+      top: -$thick;
+      transform: scale3d(1,0,1);
+    }  
+
+    &.-top,
+    &.-bottom {
+      height: $thick;
+      left: -$thick;
+      right: -$thick;
+      transform: scale3d(0,1,1);
+    }
+
+    &.-right {
+      right: -$thick;
+      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+      transform-origin: top;
+    }
+
+    &.-top {
+      top: -$thick;
+      transition: transform 0.08s linear 0.43s;
+      transform-origin: left;
+    }
+
+    &.-left {
+      left: -$thick;
+      transition: transform 0.08s linear 0.51s;
+      transform-origin: bottom;
+    }
+
+    &.-bottom {
+      bottom: -$thick;
+      transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+      transform-origin: right;
+    }  
+  }
+
+  a:hover,
+  a:active {
+
+    .text {
+      transform: translate3d(0,0,0);
+      transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+    }
+
+    &:after {
+      transform: scale3d(0,1,1);
+      right: -$thick;
+      left: -$thick;
+      transform-origin: right;
+      transition: 
+        transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+        right 0.2s cubic-bezier(1,0,.65,1.01),
+        left 0s 0.3s;
+    }
+
+    .line {
+      transform: scale3d(1,1,1);
+
+      &.-right {
+        transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+        transform-origin: bottom;
+      }
+
+      &.-top {
+        transition: transform 0.08s linear 0.4s;
+        transform-origin: right;
+      }
+
+      &.-left {
+        transition: transform 0.08s linear 0.48s;
+        transform-origin: top;
+      }
+
+      &.-bottom {
+        transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+        transform-origin: left;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8,6 +176,10 @@
 
 
 /* COULEUR PAGE+COULEUR TEXTE PAGE */
+*{
+    box-sizing: border-box;
+}
+
 body 
 {
     color:rgb(0, 0, 0);
@@ -82,7 +254,9 @@ h2
   }
   
 
-/* IMAGE*/
+
+
+/* IMAGE PRINCIAL*/
 img
 {    
      display:block;
@@ -161,7 +335,9 @@ li a:hover
     background-color: rgb(168, 201, 185);
     text-align: center;
     padding: 20px;
-    margin: 50px 0px 0px 0px
+    margin: 50px 0px 0px 0px;
+    box-shadow: 10px 10px 5px rgb(233, 232, 232);
+
   
 }
 /* titre qui suis-je? */
@@ -207,7 +383,8 @@ li a:hover
     background-color: #5b8a74;
     text-align: center;
     padding: 3px;
-    margin: 80px 50px 10px 50px;
+    margin: 80px 50px 700px 50px;
+    border-radius: 20px;
 }
 
 
@@ -311,17 +488,73 @@ li a:hover
 .h42
 {
     max-width: 700px;
-    margin: -900px 500px -50px 700px;
+    margin: -1850px 500px 900px 700px;
     padding: 15px;
     text-align: left;
 }
 .suiteA
 {
     max-width: 700px;
-    margin: 80px 180px 50px 520px;
+    margin: -800px 180px 350px 520px;
     padding: 15px;
     text-align:left;
 }
+/* titre photoshop */
+.photoshop
+{
+    margin: -10px 270px 0px 0px;
+    color: white;
+    font-weight: bold;
+
+
+}
+/* titre illustrator */
+.ILLUSTRATOR
+{
+    margin: 50px 260px 0px 0px;
+    color: white;
+    font-weight: bold;
+
+
+}
+/* titre indesign */
+.INDESIGN
+{
+    margin: 70px 290px 0px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/* image photoshop */
+.photoshop1
+{
+     
+    display:block;
+    width: 5%;
+    margin: -530px 80px 500px 1000px;
+}
+
+/* image illustrator */
+.illustrator
+{
+     
+    display:block;
+    width: 8%;
+    margin: -500px 100px 500px 1000px;
+    
+}
+/* image indesign */
+.indesign1
+{
+     
+    display:block;
+    width: 5%;
+    margin: -450px 0px 500px 1000px;
+}
+
 .href
 {
     
@@ -331,59 +564,32 @@ li a:hover
 
 
 
+  
 
 
-.portfolio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Contact
 {
-    margin: 300px 0px 100px -10px;
+    margin: 00px 50px 100px 0px;
 
 }
-/* PORTFOLIO */
-
-/* fond portfolio */
-
-
-/* projet personnel */
-.p1
-{
-max-width: 700px;
-margin: 1500px 0px 300px 10px;
-padding: 15px;
-text-align: center;
-}
-
-/* projet professionnel */
-.p2
-{
-max-width: 700px;
-margin: -670px 0px 300px 820px;
-padding: 15px;
-text-align: center;
-width:40%;
-border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -392,19 +598,16 @@ footer
 {
     
         background-color: rgb(182, 240, 213);
-        text-align: left;
-        padding: 30px;
+        text-align: center;
+        padding: 20px;
         max-width: 1500px;
-        margin: 50px 0px 50px 0px;
+        margin-top: 20px;
+
         
 
 
 }
 
-.Contact
-{
-    margin: 0px 0px 100px 0px
-}
 
 /* formulaire */
 input[type=text] 
