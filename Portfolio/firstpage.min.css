@@ -286,7 +286,7 @@ li a:hover
 
 .txt2
 {
-    margin: 20px 600px 0px 0px;
+    margin: 20px 600px 600px 0px;
     text-align: left;
     padding: 15px;
     width: 50%;
@@ -311,7 +311,7 @@ li a:hover
 .h42
 {
     max-width: 700px;
-    margin: -700px 200px 100px 700px;
+    margin: -900px 500px -50px 700px;
     padding: 15px;
     text-align: left;
 }
@@ -327,6 +327,48 @@ li a:hover
     
     margin: 50px 50px 0px 0px;
 }
+
+
+
+
+
+
+.portfolio
+{
+    margin: 300px 0px 100px -10px;
+
+}
+/* PORTFOLIO */
+
+/* fond portfolio */
+
+
+/* projet personnel */
+.p1
+{
+max-width: 700px;
+margin: 1500px 0px 300px 10px;
+padding: 15px;
+text-align: center;
+}
+
+/* projet professionnel */
+.p2
+{
+max-width: 700px;
+margin: -670px 0px 300px 820px;
+padding: 15px;
+text-align: center;
+width:40%;
+border-radius: 5px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -351,17 +393,17 @@ footer
     
         background-color: rgb(182, 240, 213);
         text-align: left;
-        padding: 20px;
+        padding: 30px;
         max-width: 1500px;
         margin: 50px 0px 50px 0px;
-        justify-content: flex-end;
-        justify-content: center;
+        
+
 
 }
 
 .Contact
 {
-    margin: 0 0 500px 0px
+    margin: 0px 0px 100px 0px
 }
 
 /* formulaire */
